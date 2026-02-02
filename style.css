@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+  text-align: center;
+  overflow: hidden;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  color: #fff;
+}
+
+.photo {
+  width: 220px;
+  border-radius: 20px;
+  margin: 15px 0;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ff4d6d;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff2e55;
+}
+
+#message {
+  margin-top: 20px;
+  background: rgba(255,255,255,0.9);
+  padding: 20px;
+  border-radius: 15px;
+  animation: fadeIn 2s;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Floating hearts */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 24px;
+  animation: floatUp 5s linear infinite;
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
